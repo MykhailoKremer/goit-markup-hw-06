@@ -746,7 +746,7 @@ body {
   left: 0;
 }
 
-.backdrop:hover .modal {
+.backdrop .modal {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
@@ -865,6 +865,18 @@ body {
   cursor: pointer;
 }
 
+.form-input:focus {
+  outline: 1px solid var(--selection-color);
+}
+
+.form-input:focus + svg {
+  fill: var(--selection-color);
+}
+
+.form-message:focus {
+  outline: 1px solid var(--selection-color);
+}
+
 .form-input-icon {
   display: block;
   width: 18px;
@@ -943,4 +955,27 @@ body {
 .form-submit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+/* ======================Animations============== */
+@keyframes modal-appear {
+  0% {
+    scale: 0;
+  }
+
+  25% {
+    scale: 0.25;
+  }
+
+  50% {
+    scale: 0.5;
+  }
+
+  75% {
+    scale: 0.75;
+  }
+
+  100% {
+    scale: 1;
+  }
 }
