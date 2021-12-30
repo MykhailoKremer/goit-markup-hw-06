@@ -397,7 +397,7 @@
             <div class="footer-news-section">
                 <h3 class="footer-social-title">подпишитесь на рассылку</h3>
                 <form class="footer-news-form">
-                    <input class="news-email" type="email" placeholder="E-mail">
+                    <input class="news-email" type="email" placeholder="E-mail" name="newsletter-mail">
                     <button class="news-email-submit" type="submit">Подписаться
                         <svg class="news-send-icon">
                             <use href="./images/icons.svg#icon-news-send"></use>
@@ -419,7 +419,7 @@
             <form class="modal-form">
                 <label class="form-input-box">
                     Имя
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="text" name="username">
                     <!-- <span class="form-input-icon"></span> -->
                     <svg class="form-input-icon">
                         <use href="images/icons.svg#icon-modal-name"></use>
@@ -427,14 +427,14 @@
                 </label>
                 <label class="form-input-box">
                     Телефон
-                    <input class="form-input" type="tel" pattern="[0-9]{10}" title="0500505050">
+                    <input class="form-input" type="tel" name="user-phone" pattern="[0-9]{10}" title="0500505050">
                     <svg class="form-input-icon">
                         <use href="images/icons.svg#icon-modal-phone"></use>
                     </svg>
                 </label>
                 <label class="form-input-box">
                     Почта
-                    <input class="form-input" type="email">
+                    <input class="form-input" type="email" name="user-mail">
                     <svg class="form-input-icon">
                         <use href="images/icons.svg#icon-modal-mail"></use>
                     </svg>
@@ -444,7 +444,7 @@
                     <textarea name="user-msg" class="form-message" placeholder="Введите текст"></textarea>
                 </label>
 
-                <input type="checkbox" class="checkbox" id="check-policy">
+                <input type="checkbox" class="checkbox" id="check-policy" name="policy-check">
                 <label for="check-policy" class="checkbox-box">Соглашаюсь с рассылкой и принимаю &nbsp; <a class="checkbox-link" href="#">Условия
                 договора</a></label>
 

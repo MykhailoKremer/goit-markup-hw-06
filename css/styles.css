@@ -482,6 +482,7 @@ body {
   display: inline-block;
   margin-top: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 231px;
 }
 
 .address-link:focus,
@@ -543,7 +544,7 @@ body {
 }
 
 .footer-news-section {
-  margin-left: 70px;
+  margin-left: 93px;
   margin-top: 72px;
 }
 
@@ -807,8 +808,8 @@ body {
 }
 
 .modal-form {
-  padding-left: 48px;
-  padding-right: 32px;
+  padding-left: 41px;
+  padding-right: 39px;
   margin-top: 12px;
 }
 
@@ -889,10 +890,15 @@ body {
 .checkbox-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--smaller-text-color);
+}
+
+.checkbox-box:hover {
+  cursor: pointer;
 }
 
 .checkbox-box::before {
